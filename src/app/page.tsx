@@ -1,7 +1,7 @@
 import SpeechRecognitionWrapper from "./components/SpeechRecognitionWrapper";
 import type { Metadata } from "next";
 
-const url = process.env.NEXT_PUBLIC_API_URL;
+const url = "https://speech-demo-frame.netlify.app";
 
 // "imageUrl": "${url}/build/img.jpg",
 
