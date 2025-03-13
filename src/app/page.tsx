@@ -1,4 +1,27 @@
 import SpeechRecognitionWrapper from "./components/SpeechRecognitionWrapper";
+import type { Metadata } from "next";
+
+const url = process.env.NEXT_PUBLIC_API_URL;
+
+// "imageUrl": "${url}/build/img.jpg",
+
+export const metadata: Metadata = {
+  other: {
+    "fc:frame": `{
+      "version": "next",
+      "button": {
+        "title": "Start",
+        "action": {
+          "type": "launch_frame",
+          "name": "Speech Recognition Demo",
+          "url": "${url}",
+          "splashImageUrl": "${url}/build/images/frames/icon.png",
+          "splashBackgroundColor": "#FFFFFF"
+        }
+      }
+    }`,
+  },
+};
 
 export default function Home() {
   return (
