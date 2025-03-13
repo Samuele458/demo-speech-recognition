@@ -3,19 +3,18 @@ import type { Metadata } from "next";
 
 const url = "https://speech-demo-frame.netlify.app";
 
-// "imageUrl": "${url}/build/img.jpg",
-
 export const metadata: Metadata = {
   other: {
     "fc:frame": `{
       "version": "next",
+      "imageUrl": "${url}/frame.png",
       "button": {
         "title": "Start",
         "action": {
           "type": "launch_frame",
           "name": "Speech Recognition Demo",
           "url": "${url}",
-          "splashImageUrl": "${url}/build/images/frames/icon.png",
+          "splashImageUrl": "${url}/icon.png",
           "splashBackgroundColor": "#FFFFFF"
         }
       }
